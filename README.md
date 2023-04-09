@@ -31,3 +31,9 @@ on:
 - name: Use tag
   run: echo ${{steps.tag.outputs.tag}}
 ```
+
+You can also access the tag from the env variable:
+```yaml
+- name: Use Tag
+  run: echo $GIT_TAG_NAME
+```
